@@ -1,0 +1,79 @@
+[row style="small" col_style="divided" width="custom" custom_width="1350px" v_align="middle"]
+
+[col span__sm="12" align="left" animate="fadeInLeft"]
+
+&nbsp;
+
+[ux_product_breadcrumbs size="larger"]
+
+&nbsp;
+
+[divider width="1000px" margin="-0.7em"]
+
+[/col]
+[col span="4" span__sm="12" divider="0" bg_color="rgba(2, 87, 122, 0.02)"]
+
+[ux_product_gallery]
+
+[/col]
+[col span="6" span__sm="12" divider="0" bg_color="rgba(235, 233, 233, 0.3)"]
+<p style="text-align: center;">[ux_product_title size="smaller" divider="0"]</p>
+<p style="text-align: center;">[ux_product_excerpt]</p>
+<p style="text-align: center;">[ux_product_meta]</p>
+[/col]
+[col span="2" span__sm="12" divider="0" padding="0px 0px 0px 0px" margin="0 0px 0px 0px" align="center"]
+
+[ux_product_price]
+<h3><strong><span style="color: #292929;">Giá</span>: <span style="color: #a31d1d;">Liên hệ</span></strong></h3>
+[button text="Gọi: 0977 887 504" color="secondary" radius="15" depth="2" expand="true" link="tel:0977887504"]
+
+[button text="chat zalo" color="secondary" radius="15" depth="2" expand="true" link="https://zalo.me/0977887504" target="_blank"]
+
+[button text="Nhận báo giá" color="secondary" radius="15" depth="2" expand="true" link="https://mail.google.com/mail/u/0/?fs=1&amp;to=locphatautotech@gmail.com&amp;su=Y%C3%AAu+c%E1%BA%A7u+b%C3%A1o+gi%C3%A1+s%E1%BA%A3n+ph%E1%BA%A9m%2Fd%E1%BB%8Bch+v%E1%BB%A5&amp;body=K%C3%ADnh+g%E1%BB%ADi+C%C3%B4ng+ty+L%E1%BB%99c+Ph%C3%A1t+Autotech%2C%0A%0AT%C3%B4i+mu%E1%BB%91n+y%C3%AAu+c%E1%BA%A7u+b%C3%A1o+gi%C3%A1+cho+s%E1%BA%A3n+ph%E1%BA%A9m%2Fd%E1%BB%8Bch+v%E1%BB%A5+sau%3A%0A-+%5BT%C3%AAn+s%E1%BA%A3n+ph%E1%BA%A9m%2Fd%E1%BB%8Bch+v%E1%BB%A5+mu%E1%BB%91n+b%C3%A1o+gi%C3%A1%5D%0A-+S%E1%BB%91+l%C6%B0%E1%BB%A3ng%3A+%5B...%5D%0A-+Y%C3%AAu+c%E1%BA%A7u+k%E1%BB%B9+thu%E1%BA%ADt+%28n%E1%BA%BFu+c%C3%B3%29%3A+%5B...%5D%0A%0AXin+vui+l%C3%B2ng+g%E1%BB%ADi+b%C3%A1o+gi%C3%A1+chi+ti%E1%BA%BFt+v%C3%A0o+email+n%C3%A0y.+%0A%0AXin+c%E1%BA%A3m+%C6%A1n+v%C3%A0+tr%C3%A2n+tr%E1%BB%8Dng%2C%0A%0A%5BT%C3%AAn+c%C3%A1+nh%C3%A2n+%2F+C%C3%B4ng+ty%5D%0A%5BS%E1%BB%91+%C4%91i%E1%BB%87n+tho%E1%BA%A1i%5D%0A%5BEmail+li%C3%AAn+h%E1%BB%87%5D&amp;tf=cm"]
+
+[/col]
+[col span__sm="12"]
+<p style="text-align: center;">[ux_product_tabs style="tabs_normal"]</p>
+[/col]
+
+[/row]
+
+
+// Di chuyển xuống dưới qua phần mô tả sản phẩm 
+
+[row width="custom" custom_width="1300px"]
+
+[col span__sm="12"]
+<h2 style="padding-left: 40px;"><span style="color: #303030; font-size: 105%;">💡 <span style="color: #01303f;">VÌ SAO BẠN NÊN CHỌN LỘC PHÁT AUTOTECH?</span></span></h2>
+<h6></h6>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Tư vấn kỹ thuật chuyên sâu, hỗ trợ lựa chọn giải pháp tối ưu cho từng nhu cầu.</span></p>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Đội ngũ kỹ sư - kỹ thuật viên tay nghề cao, giàu kinh nghiệm làm việc.</span></p>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Sản phẩm chính hãng, dịch vụ sửa chữa - lắp đặt được thực hiện bằng thiết bị chuyên dụng hiện đại.</span></p>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Phản hồi nhanh chóng, hỗ trợ tận nơi tại TP.HCM và toàn quốc.</span></p>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Quy trình minh bạch, báo giá rõ ràng, không phát sinh chi phí ẩn.</span></p>
+<p style="padding-left: 80px;" data-start="475" data-end="973"><span style="font-size: 105%; color: #303030;">✅ Chế độ hậu mãi đầy đủ, bảo hành chính hãng, hỗ trợ kỹ thuật sau bán hàng.</span></p>
+
+<h1 data-start="475" data-end="973"></h1>
+<h2 style="padding-left: 40px;"><span style="color: #303030; font-size: 105%;">📌 <span style="color: #01303f;">QUY TRÌNH TRIỂN KHAI CHUYÊN NGHIỆP:</span></span></h2>
+<h6></h6>
+<p style="padding-left: 80px;" data-start="1024" data-end="1313"><span style="font-size: 105%; color: #303030;"><strong>✓</strong>  Tiếp nhận yêu cầu - khảo sát thực tế.</span></p>
+<p style="padding-left: 80px;" data-start="1024" data-end="1313"><span style="font-size: 105%; color: #303030;"><strong>✓ </strong> Phân tích kỹ thuật &amp; đề xuất giải pháp phù hợp.</span></p>
+<p style="padding-left: 80px;" data-start="1024" data-end="1313"><span style="font-size: 105%; color: #303030;"><strong>✓</strong>  Báo giá rõ ràng và xác nhận phương án thực hiện.</span></p>
+<p style="padding-left: 80px;" data-start="1024" data-end="1313"><span style="font-size: 105%; color: #303030;"><strong>✓</strong>  Thi công - lắp đặt - sửa chữa hoặc cung cấp thiết bị.</span></p>
+<p style="padding-left: 80px;" data-start="1024" data-end="1313"><span style="font-size: 105%; color: #303030;"><strong>✓</strong>  Kiểm tra - nghiệm thu - bàn giao &amp; hướng dẫn sử dụng.</span></p>
+
+
+<hr style="padding-left: 40px;" data-start="1315" data-end="1318" />
+<p style="padding-left: 40px;" data-start="1320" data-end="1504"><span style="font-size: 105%; color: #303030;">Nếu bạn đang cần hỗ trợ về <strong><a href="https://locphatautotech.com/thiet-bi-co-khi/"><span style="color: #0000ff;">thiết bị cơ khí</span></a>, <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://locphatautotech.com/tu-dong-hoa/">tự động hóa</a></span>, <a href="https://locphatautotech.com/cong-dung-cu/"><span style="color: #0000ff;">dụng cụ</span></a><span style="color: #0000ff;">, <a style="color: #0000ff;" href="https://locphatautotech.com/thiet-bi-kho-xuong/">thiết bị kho xưởng </a></span></strong>hoặc <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://locphatautotech.com/dich-vu/"><strong>các dịch vụ thiết kế- thi công- bảo trì</strong></a></span>, hãy liên hệ với chúng tôi để được tư vấn chi tiết.</span></p>
+[/col]
+
+[/row]
+[row]
+
+[col span__sm="12" align="center"]
+
+[ux_product_related]
+
+[/col]
+
+[/row]

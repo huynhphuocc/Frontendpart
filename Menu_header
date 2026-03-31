@@ -1,0 +1,127 @@
+[row style="collapse" col_bg="rgb(2, 87, 122)" width="full-width" v_align="equal" h_align="center" padding="0px 0px px 0px" class="abdat"]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="275" img_width="30" pos="center" font_size="large" link="https://locphatautotech.com/tu-dong-hoa"]
+
+<p style="text-align: center;"><a href="https://locphatautotech.com/tu-dong-hoa" class="menu-link">TỰ ĐỘNG HÓA</a></p>
+
+[/featured_box]
+
+[/col]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="279" img_width="30" pos="center" link="https://locphatautotech.com/thiet-bi-co-khi/"]
+
+<p style="text-align: center;">
+<a href="https://locphatautotech.com/thiet-bi-co-khi/" class="menu-link">THIẾT BỊ CƠ KHÍ</a>
+</p>
+
+[/featured_box]
+
+[/col]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="278" img_width="30" pos="center" link="https://locphatautotech.com/cong-dung-cu/"]
+
+<p style="text-align: center;">
+<a href="https://locphatautotech.com/cong-dung-cu/" class="menu-link">CÔNG DỤNG CỤ</a>
+</p>
+
+[/featured_box]
+
+[/col]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="276" img_width="30" pos="center" link="https://locphatautotech.com/thiet-bi-kho-xuong/"]
+
+<p style="text-align: center;">
+<a href="https://locphatautotech.com/thiet-bi-kho-xuong/" class="menu-link">THIẾT BỊ KHO XƯỞNG</a>
+</p>
+
+[/featured_box]
+
+[/col]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="280" img_width="20" pos="center" link="https://locphatautotech.com/thiet-bi-do/"]
+
+<p style="text-align: center;">
+<a href="https://locphatautotech.com/thiet-bi-do/" class="menu-link">THIẾT BỊ ĐO</a>
+</p>
+
+[/featured_box]
+
+[/col]
+
+[col span="2" span__sm="6" bg_color="rgb(1, 48, 63)"]
+
+[featured_box img="1789" img_width="45" pos="center" link="https://locphatautotech.com/dich-vu/"]
+
+<p style="text-align: center;">
+<a href="https://locphatautotech.com/dich-vu/" class="menu-link">DỊCH VỤ CÔNG NGHIỆP</a>
+</p>
+
+[/featured_box]
+
+[/col]
+
+[/row]
+
+<style>
+/* ===== TEXT ===== */
+.menu-link {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* ===== UNDERLINE ===== */
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #00c2ff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* ===== HOVER SCALE ===== */
+.abdat .col:hover .menu-link {
+  transform: scale(1.1);
+}
+
+/* ===== UNDERLINE SHOW ===== */
+.abdat .col:hover .menu-link::after {
+  width: 100%;
+}
+
+/* ===== ICON ===== */
+.abdat .icon-box-img img {
+  transition: transform 0.25s ease;
+}
+
+/* icon zoom */
+.abdat .col:hover .icon-box-img img {
+  transform: scale(1.1);
+}
+
+/* ===== BOX HOVER ===== */
+.abdat .col {
+  transition: background 0.3s ease;
+}
+
+.abdat .col:hover {
+  background: rgb(2, 87, 122);
+}
+</style>

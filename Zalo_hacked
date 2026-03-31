@@ -1,0 +1,181 @@
+[contact-form-7 id="6" title="Form liên hệ 1"]
+
+<style>
+  #lp-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  #lp-popup-overlay.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #lp-popup-box {
+    background: #ffffff;
+    max-width: 420px;
+    width: 90%;
+    padding: 28px 24px 24px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    font-family: inherit;
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+    transition: all 0.35s ease;
+  }
+
+  #lp-popup-overlay.is-active #lp-popup-box {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .lp-popup-icon-wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #13b36b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+  }
+
+  .lp-popup-check {
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  #lp-popup-box h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  #lp-popup-box p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: #555555;
+  }
+
+  .lp-popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6px;
+  }
+
+  .lp-popup-btn {
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  #lp-popup-home-btn {
+    background: #0073aa;
+    color: #ffffff;
+  }
+
+  #lp-popup-home-btn:hover {
+    background: #005f88;
+  }
+
+  #lp-popup-zalo-btn {
+    background: #ffffff;
+    color: #0073aa;
+    border: 1px solid #0073aa;
+  }
+
+  #lp-popup-zalo-btn:hover {
+    background: #e6f4ff;
+  }
+</style>
+
+<div id="lp-popup-overlay">
+  <div id="lp-popup-box">
+    <div class="lp-popup-icon-wrap">
+      <span class="lp-popup-check">✓</span>
+    </div>
+    <h3>Gửi thông tin thành công</h3>
+    <p>Cảm ơn bạn đã liên hệ Lộc Phát Autotech. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+
+    <div class="lp-popup-actions">
+      <button id="lp-popup-home-btn" class="lp-popup-btn" type="button">
+        Về trang chủ
+      </button>
+      <button id="lp-popup-zalo-btn" class="lp-popup-btn" type="button">
+        Gửi thông tin qua Zalo
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('wpcf7mailsent', function (event) {
+    // ĐÚNG ID FORM CỦA BRO
+    if (event.detail.contactFormId == 6) {
+
+      var form = event.target;
+
+      // Lấy dữ liệu từ form (chỉnh lại name nếu đặt khác)
+      var nameField   = form.querySelector('[name="your-name"]');
+      var phoneField  = form.querySelector('[name="your-phone"]');
+      var messageField= form.querySelector('[name="your-message"]');
+
+      var name    = nameField   ? nameField.value.trim()    : '';
+      var phone   = phoneField  ? phoneField.value.trim()   : '';
+      var message = messageField? messageField.value.trim() : '';
+
+      // Soạn nội dung nhắn qua Zalo
+      var zaloText = "Form liên hệ từ website:%0A%0A"
+        + "Họ tên: " + name + "%0A"
+        + "SĐT: " + phone + "%0A"
+        + "Nội dung: " + message;
+
+      // SỐ ZALO ở đây nè, sửa lại cho đúng
+      var zaloNumber = "0814157197";
+      var zaloUrl = "https://zalo.me/" + zaloNumber + "?text=" + zaloText;
+
+      // Gắn hành vi cho nút Zalo
+      var zaloBtn = document.getElementById('lp-popup-zalo-btn');
+      if (zaloBtn) {
+        zaloBtn.onclick = function () {
+          window.location.href = zaloUrl;
+        };
+      }
+
+      // Hiện popup
+      var overlay = document.getElementById('lp-popup-overlay');
+      if (overlay) {
+        overlay.classList.add('is-active');
+      }
+
+      // Reset form sau khi lấy dữ liệu rồi
+      form.reset();
+    }
+  }, false);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var homeBtn = document.getElementById('lp-popup-home-btn');
+    if (homeBtn) {
+      homeBtn.addEventListener('click', function () {
+        window.location.href = '/'; // đổi thành URL home thật nếu cần
+      });
+    }
+  });
+</script>

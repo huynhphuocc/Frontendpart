@@ -1,0 +1,105 @@
+<footer>
+    <div class="f_area_top">
+        <div>
+           <p class="f_column_titile">Product Information</p>
+            <ul>
+                <li><a href="/products/envn/">WEB Catalog</a></li>
+                <li><a href="/products/select_guide/en-vn/">Search by Category</a></li>
+                <li><a href="/select/en-vn/">Search by Program</a></li>
+                <li><a href="/newproducts/en-vn/">Search by New Products</a></li>
+                <li><a href="/products/subject/en-vn/">Search by theme or industry</a></li>
+                <li><a href="/products/solutions/en-vn/index.html">Search by Thematic Solutions</a></li>
+                <li><a href="/products/video_library/en-vn/index.html">Search by Videos</a></li>
+                <li><a href="/pginfo/en-vn/">Search by Specialized Products for General Use</a></li>
+                <li><a href="/webcatalog/discontinued/en-vn/">Discontinued Products</a></li>
+            </ul>
+        </div>
+        <div>
+           <p class="f_column_titile">Documents / Download</p>
+            <ul>
+                <li><a href="/select/en-vn/index.html">Model Selection Software</a></li>
+                <li><a href="/cadlib/en-vn/">2D/3D CAD</a></li>
+                <li><a href="/manuals/en-vn/">Operation Manuals/Configuration Files</a></li>
+                <li><a href="/specs/manifold/envn/">Manifold Specifications</a></li>
+                <li><a href="/maint/en-vn/">Maintenance Parts List</a></li>
+                <li><a href="/support/glossary/en-vn/">Technical Information/Glossary of Terms</a></li>
+                <li><a href="/specs/customize/envn/">Simple Specials System</a></li>
+                <li><a href="/etc/rohs/en-vn/">Green Procurement</a></li>
+                <li><a href="/pl/en-vn/">Handling Precautions for SMC Products</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="f_column_titile">Global Information</p>
+            <ul>
+                <li><a href="/overseas/sguide/en-vn/index.html">Global Network</a></li>
+                <li><a href="/overseas/international/en-vn/">Guide to Products Conforming to International Legislation</a></li>
+                <li><a href="/overseas/china/en-vn/">Famous Trademark for China</a></li>
+            </ul>
+            <p class="f_column_titile">About SMC</p>
+            <ul>
+                <li><a href="/about_us/en-vn/regional.html">About SMC/Regional</a></li>
+                <li><a href="/about_us/en-vn/vietnam.html">About SMC Vietnam/Corporate Activities</a></li>
+                <li><a href="/about/en-vn/index.html">About SMC/Corporate Activities</a></li>
+                <li><a href="/ir/en-jp/" target="”_blank”">Investor Relations</a></li>
+                <li><a href="/about_us/career/en-vn/index.html">About SMC Manufacturing/Recruitment Information</a></li>
+                <li><a href="/about/co2/en-vn/index.html">Sustainable Management of CO<sub>2</sub></a></li>
+                <li><a href="/about/bcp/en-vn/index.html">Business Continuity Plan</a></li>
+                <li><a href="/about/sdgs/en-vn/index.html">SMC SDGs PROJECT</a></li>
+               <li><a href="/about/en-vn/quality.html">Quality assurance</a></li>
+                <li><a href="/docs/en-vn/privacy/">Privacy Policy for SMC World</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="f_column_titile">Sustainability</p>
+            <ul>
+                <li><a href="/about/sustainability/en-vn/index.html">Sustainability</a></li>
+            </ul>
+           <p class="f_column_titile">Support / FAQ</p>
+            <ul>
+                <li><a href="/support/support-program/en-vn/index.html">Customer Partnership Program</a></li>
+                <li><a href="/support/one-stop-shop/en-vn/index.html">One Stop Shop Leave it to SMC</a></li>
+                <li><a href="/support/faq/en-vn/index.html">Frequently Asked Questions</a></li>
+                <li><a href="/support/faq/en-vn/guide.html">Troubleshooting/Check sheet</a></li>
+                <li><a href="/support/inspect/en-vn/demonstration.html">Product Demonstration</a></li>
+                <li><a href="/contact/en-vn/index.html">Contact Us</a></li>
+                <li><a href="http://cep.smcsing.com.sg/SMS/CEP.nsf?Open" target="”_blank”">CEP Portal</a></li>
+            </ul>
+        </div>
+    </div><!--f_area_top-->
+    
+    <div class="f_area_bottom">
+        <img src="/assets/smc_img/common/f_logo.png" alt="SMC logomark" title="SMC logomark">
+        <p>Copyright © SMC Corporation. All Rights Reserved.</p>
+    </div><!--f_area_bottom-->
+<script id="rendered-js">
+$(function () {
+
+  let $megaMenu = $('.js-megaMenu');
+
+  //表示を切り替える
+  const fadeOutMenu = () => {
+$megaMenu.removeClass('is-active');
+  };
+
+  // メガメニューのリンクをクリックした時
+  $megaMenu.on('click', function (e) {
+let $self = $(e.target);
+
+// リンクがis-activeを持っていないとき
+if (!$self.hasClass('is-active')) {
+  fadeOutMenu();
+}
+
+$self.toggleClass('is-active');
+  });
+
+  // メガメニューのリンク以外の場所をクリックした時
+  $(document).on('click touchend', function (e) {
+if (!$(e.target).closest($megaMenu).length) {
+  fadeOutMenu();
+}
+  });
+
+});
+</script>
+</footer>

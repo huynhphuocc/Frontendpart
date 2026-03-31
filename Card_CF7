@@ -1,0 +1,73 @@
+<p><!-- POPUP SAU KHI GỬI FORM --></p>
+<div id="lp-popup-overlay">
+<div id="lp-popup-box">
+<div class="lp-popup-icon-wrap"><span class="lp-popup-check">✓</span></div>
+<h2>Gửi thông tin thành công!</h2>
+<p>Cảm ơn bạn đã liên hệ Lộc Phát Autotech. Chúng tôi đã nhận được thông tin của bạn và sẽ phản hồi trong thời gian sớm nhất.</p>
+<p><button id="lp-popup-home-btn">Về trang chủ</button></div>
+</div>
+<style>
+/* CARD FORM */
+.lp-contact-card {max-width:960px; margin:40px auto; padding:32px 28px; background:#fff; border-radius:16px;box-shadow:0 18px 48px rgba(0,0,0,0.08); border:1px solid rgba(3,101,147,0.06);}
+.lp-contact-card .lp-form-title {margin:0 0 6px; font-size:30px; font-weight:700; color:#034764; text-align:center;}
+.lp-contact-card .lp-form-desc {font-size:22px; color:#494949; margin:0 0 18px; text-align:center;}
+.lp-contact-card .wpcf7-form {display:flex; flex-direction:column; gap:16px;}
+.lp-contact-card .wpcf7-form p {margin:0;}
+.lp-contact-card label {display:block; margin-bottom:6px; font-size:21px; color:#303030;}</p>
+<p>.lp-contact-card input[type="text"],
+.lp-contact-card input[type="email"],
+.lp-contact-card input[type="tel"],
+.lp-contact-card input[type="number"],
+.lp-contact-card textarea {width:100%; padding:12px 14px; font-size:22px; border-radius:10px; border:1px solid #d2d7dd;background:#f9fafb; transition:.2s; box-sizing:border-box;}</p>
+<p>.lp-contact-card input:focus,
+.lp-contact-card textarea:focus {outline:none; border-color:#036593; background:#fff; box-shadow:0 0 0 2px rgba(3,101,147,0.18);}
+.lp-contact-card textarea {min-height:140px; resize:vertical;}</p>
+<p>/* Placeholder */
+.lp-contact-card ::placeholder {color:#81868d; font-size:18px;}</p>
+<p>/* Nút submit */
+.lp-contact-card input[type="submit"] {display:block; margin:20px auto 0; padding:12px 36px; font-size:21px;font-weight:600; border-radius:999px; border:none; cursor:pointer; background:#036593; color:#fff; transition:.2s;}</p>
+<p>.lp-contact-card input[type="submit"]:hover {background:#03415c; transform:translateY(-1px);}</p>
+<p>/* Lỗi từng field */
+.lp-contact-card .wpcf7-not-valid-tip {font-size:14px; color:#d9534f; margin-top:4px;}</p>
+<p>/* Khung tổng lỗi / message */
+.lp-contact-card .wpcf7-response-output {margin:16px 0 0; padding:10px 12px; border-radius:10px; font-size:14px;}
+.lp-contact-card .wpcf7-form.sent .wpcf7-response-output {border-color:#13b36b; background:#e6f7ef; color:#106344;}
+.lp-contact-card .wpcf7-form.invalid .wpcf7-response-output {border-color:#d9534f; background:#fdecea; color:#a02724;}</p>
+<p>/* RESPONSIVE */
+@media(max-width:600px){.lp-contact-card {max-width:100%; margin:24px auto; padding:24px 18px;}.lp-contact-card .lp-form-title {font-size:22px;}.lp-contact-card .lp-form-desc {font-size:16px;}
+}</p>
+<p>/* POPUP OVERLAY */
+#lp-popup-overlay {position:fixed; inset:0; background:rgba(0,0,0,0.8); display:flex; align-items:center;justify-content:center; z-index:9999; opacity:0; pointer-events:none; transition:opacity .35s;}
+#lp-popup-overlay.is-active {opacity:1; pointer-events:auto;}</p>
+<p>/* POPUP BOX */
+#lp-popup-box {background:#fff; max-width:520px; width:92%; padding:36px 32px 30px; border-radius:16px;text-align:center; box-shadow:0 18px 48px rgba(0,0,0,0.25); opacity:0; transform:translateY(20px) scale(.96); transition:.35s;}
+#lp-popup-overlay.is-active #lp-popup-box {opacity:1; transform:translateY(0) scale(1);}</p>
+<p>/* ICON */
+.lp-popup-icon-wrap {width:90px; height:90px; border-radius:50%; background:#13b36b; display:flex;align-items:center; justify-content:center; margin:0 auto 22px; box-shadow:0 8px 24px rgba(19,179,107,0.4);}
+.lp-popup-check {color:#fff; font-size:52px; font-weight:900; line-height:1;}
+#lp-popup-overlay.is-active .lp-popup-icon-wrap {animation:lp-pop .5s ease-out forwards;}</p>
+<p>@keyframes lp-pop {0%{transform:scale(0); opacity:0;} 60%{transform:scale(1.18); opacity:1;} 100%{transform:scale(1); opacity:1;}}</p>
+<p>/* POPUP TEXT */
+#lp-popup-box h2 {margin:0 0 10px; font-size:24px; font-weight:700; color:#034764;}
+#lp-popup-box p {margin:0 0 20px; font-size:16px; color:#303030; line-height:1.55;}</p>
+<p>/* POPUP BUTTON */
+#lp-popup-home-btn {display:inline-block; padding:10px 26px; border-radius:999px; border:none; cursor:pointer;background:#036593; color:#fff; font-size:15px; font-weight:600; letter-spacing:.6px; text-transform:uppercase; transition:.2s;}
+#lp-popup-home-btn:hover {background:#03415c;}
+</style>
+<p><script>
+// Hiện popup sau khi gửi form CF7 thành công
+document.addEventListener('wpcf7mailsent', function (event) {if (event.detail.contactFormId == 1894) {var overlay = document.getElementById('lp-popup-overlay');if (overlay) overlay.classList.add('is-active');</p>
+<p>var form = document.querySelector('.wpcf7 form');if (form) form.reset();}
+}, false);</p>
+<p>// Xử lý nút "Về trang chủ"
+document.addEventListener('DOMContentLoaded', function () {var homeBtn = document.getElementById('lp-popup-home-btn');if (homeBtn) {homeBtn.addEventListener('click', function () {window.location.href = '/';// Hoặc: window.location.href = 'https://locphatautotech.com/';});}
+});
+</script></p>
+
+[/col]
+[col span="6" span__sm="12"]
+
+[ux_image id="1510" animate="fadeInLeft"]
+
+
+[/col]

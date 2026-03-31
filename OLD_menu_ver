@@ -1,0 +1,15 @@
+[row style="collapse" width="full-width" h_align="center"] 
+
+[col span__sm="12" divider="0" padding="0px 0px 0px 0px" align="right" bg_color="rgb(55, 55, 55)" color="light" text_depth="4" parallax="1"]
+
+[button text="Dịch vụ" expand="true"] 
+
+[ux_nav parent="207" size="small" class="vleft"] 
+
+[gap class="aaab"] [button text="thương hiệu" expand="true"] 
+
+[ux_nav parent="119" align="center" class="vleft"] 
+
+[/col] 
+
+[/row]

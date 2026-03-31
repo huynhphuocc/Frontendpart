@@ -1,0 +1,57 @@
+[row style="large" width="full-width"]
+
+[col span="3" span__sm="12" bg_color="#f5f5f5" class="sidebar-clean"]
+
+<!-- TỰ ĐỘNG HÓA -->
+<div class="nav-title">Tự động hóa</div>
+
+[ux_nav parent="54" align="left" class="custom-nav"]
+[gap height="20px"]
+
+<!-- DỊCH VỤ -->
+<div class="nav-title">Dịch vụ</div>
+[ux_nav parent="207" align="left" class="custom-nav"]
+
+[/col]
+
+<style>
+/* ===== SIDEBAR ===== */
+.sidebar-clean {padding: 15px;}
+/* ===== TITLE ===== */
+.nav-title {font-size: 13px;font-weight: 600;
+    color: #666;text-transform: uppercase;
+    margin-bottom: 10px; letter-spacing: 0.5px;}
+
+/* ===== NAV ITEM ===== */
+.custom-nav li {list-style: none;}
+.custom-nav li a {display: block;padding: 7px 10px;
+  color: #333;font-size: 14px;
+  border-radius: 6px;transition: all 0.2s ease;}
+/* ===== HOVER ===== */
+.custom-nav li a:hover {
+  background: #e0e0e0;color: #000;transform: translateX(4px);}
+/* ===== ACTIVE ===== */
+.custom-nav li.active a {
+  background: #02577a;color: #fff;}
+</style>
+
+
+/*Original --- dưới gap height="40px" */
+[row style="large" width="full-width"]
+
+[col span="3" span__sm="12" divider="0" align="left" bg_color="#ebe9e9"]
+
+[button text="tự động hóa" color="secondary" expand="true" link="https://locphatautotech.com/tu-dong-hoa/"]
+
+[ux_nav parent="54" style="pills" align="center" class="vleft"]
+
+[gap class="aaab"]
+
+[button text="Dịch vụ" color="secondary" expand="true"]
+
+[ux_nav parent="207" style="tabs" align="center" class="vleft"]
+
+[gap height="60px" class="aaab"]
+
+
+[/col]

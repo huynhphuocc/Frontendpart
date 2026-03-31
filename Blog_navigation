@@ -1,0 +1,76 @@
+<div class="sidebar-nav">
+
+  <div class="nav-section">
+    <div class="nav-title">Dịch vụ</div>
+    [ux_nav parent="207" size="small" class="custom-nav"]
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-title">Thương hiệu</div>
+    [ux_nav parent="119" class="custom-nav"]
+  </div>
+
+</div>
+
+<style>
+.sidebar-nav {
+  padding: 20px 16px;
+  background: linear-gradient(180deg, #2b2b2b, #1f1f1f);
+  border-radius: 8px;
+}
+
+/* Section spacing */
+.nav-section {
+  margin-bottom: 20px;
+}
+
+/* Title */
+.nav-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* Nav item */
+.custom-nav li {
+  list-style: none;
+}
+
+.custom-nav li a {
+  display: block;
+  padding: 8px 10px;
+  color: #ddd;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.custom-nav li a:hover {
+  background: #3a3a3a;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* Active */
+.custom-nav li.active a {
+  background: #007aff;
+  color: #fff;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll(".custom-nav li a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      links.forEach(l => l.parentElement.classList.remove("active"));
+      this.parentElement.classList.add("active");
+    });
+  });
+});
+</script>

@@ -1,0 +1,103 @@
+<!-- POPUP SAU KHI GỬI FORM -->
+<div id="lp-popup-overlay">
+  <div id="lp-popup-box">
+    <div class="lp-popup-icon-wrap">
+      <span class="lp-popup-check">✓</span>
+    </div>
+
+    <h2>Gửi thông tin thành công!</h2>
+
+    <p>Cảm ơn bạn đã liên hệ Lộc Phát Autotech. Chúng tôi đã nhận được thông tin của bạn và sẽ phản hồi trong thời gian sớm nhất.</p>
+
+    <button id="lp-popup-home-btn">Về trang chủ</button>
+  </div>
+</div>
+
+<style>
+/* Nền mờ full màn hình */
+#lp-popup-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s ease;}
+
+/* Khi active */
+#lp-popup-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;}
+
+/* Hộp popup */
+#lp-popup-box {background: #ffffff; max-width: 520px;
+  width: 92%; padding: 36px 32px 30px; border-radius: 16px; text-align: center; 
+  box-shadow: 0 18px 48px rgba(0,0,0,0.25); font-family: inherit;
+  opacity: 0; transform: translateY(20px) scale(0.96); transition: all 0.35s ease;}
+
+/* Fade + slide in của hộp */
+#lp-popup-overlay.is-active #lp-popup-box {
+  opacity: 1;
+  transform: translateY(0) scale(1);}
+
+/* Icon tròn */
+.lp-popup-icon-wrap {
+  width: 90px; height: 90px; border-radius: 50%;
+  background: #13b36b; display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 22px; box-shadow: 0 8px 24px rgba(19,179,107,0.4);}
+
+.lp-popup-check {
+  color: #ffffff; font-size: 58px; font-weight: 900; line-height: 1;}
+
+/* Animation */
+#lp-popup-overlay.is-active .lp-popup-icon-wrap {
+  animation: lp-pop 0.5s ease-out forwards;}
+
+@keyframes lp-pop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.18); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Tiêu đề */
+#lp-popup-box h2 {
+  margin: 0 0 12px;font-size: 28px;
+  font-weight: 700; color: #034764;}
+
+/* Nội dung */
+#lp-popup-box p {
+  margin: 0 0 24px; font-size: 20px;
+  color: #303030; line-height: 1.55;}
+
+/* Button */
+#lp-popup-home-btn {
+  display: inline-block; padding: 12px 28px;
+  border-radius: 999px; border: none;
+  cursor: pointer; background: #036593;
+  color: #ffffff; font-size: 18px; font-weight: 600;
+  letter-spacing: 0.6px; text-transform: uppercase;}
+
+#lp-popup-home-btn:hover { background: #03415c;}
+</style>
+
+<script>
+// Hiện popup sau khi gửi form CF7 thành công
+document.addEventListener('wpcf7mailsent', function (event) {
+  if (event.detail.contactFormId == 1894) {
+    var overlay = document.getElementById('lp-popup-overlay');
+    if (overlay) overlay.classList.add('is-active');
+
+    var form = document.querySelector('.wpcf7 form');
+    if (form) form.reset();
+  }
+}, false);
+
+// Xử lý nút "Về trang chủ"
+document.addEventListener('DOMContentLoaded', function () {
+  var homeBtn = document.getElementById('lp-popup-home-btn');
+  if (homeBtn) {
+    homeBtn.addEventListener('click', function () {
+      window.location.href = '/';
+    });
+  }
+});
+</script>

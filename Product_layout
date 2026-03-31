@@ -1,0 +1,137 @@
+[row style="small" col_style="divided" width="custom" custom_width="1350px" v_align="middle" class="product-layout"]
+[col span__sm="12" align="left"]
+
+[ux_product_breadcrumbs size="small"]
+
+[divider width="100%" margin="8px 0"]
+
+[/col]
+
+[col span="4" span__sm="12" class="col-gallery"]
+
+[ux_product_gallery]
+
+[/col]
+
+[col span="6" span__sm="12" class="col-info"]
+
+[ux_product_title size="large"]
+
+[gap height="8px"]
+
+[ux_product_excerpt]
+
+[gap height="6px"]
+
+[ux_product_meta]
+
+[/col]
+
+[col span="2" span__sm="12" class="col-cta"]
+
+<div class="cta-box">
+
+<div class="price">
+<span class="label">Giá:</span>
+<span class="value">Liên hệ</span>
+</div>
+
+[button text="📞 Gọi ngay" expand="true" class="btn-call" link="tel:0977887504"]
+
+[button text="💬 Zalo" expand="true" class="btn-zalo" link="https://zalo.me/0977887504" target="_blank"]
+
+[button text="📩 Báo giá" expand="true" class="btn-quote" link="https://mail.google.com/mail/u/0/?fs=1&to=locphatautotech@gmail.com" target="_blank"]
+
+</div>
+
+</col>
+
+[col span__sm="12"]
+
+[ux_product_tabs style="tabs_normal"]
+
+</col>
+
+[/row]
+
+<style>
+.product-layout {
+  gap: 10px;
+}
+
+/* Gallery */
+.col-gallery {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Info */
+.col-info {
+  padding: 10px 15px;
+}
+
+.col-info h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* CTA */
+.col-cta {
+  padding: 5px;
+}
+
+.cta-box {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+/* Price */
+.price {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.price .label {
+  color: #666;
+}
+
+.price .value {
+  color: #c62828;
+  font-weight: 600;
+}
+
+/* Button */
+.col-cta .button {
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.col-cta .button:hover {
+  transform: translateY(-1px);
+}
+
+/* Màu */
+.btn-call { background: #007aff; }
+.btn-zalo { background: #00aaff; }
+.btn-quote { background: #555; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Auto highlight nếu muốn (optional nhẹ)
+  const buttons = document.querySelectorAll(".col-cta .button");
+  buttons.forEach(btn => {
+    btn.addEventListener("mouseenter", () => {
+      btn.style.opacity = "0.9";
+    });
+    btn.addEventListener("mouseleave", () => {
+      btn.style.opacity = "1";
+    });
+  });
+});
+</script>
